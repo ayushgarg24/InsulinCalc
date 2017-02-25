@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 public class FoodListings extends AppCompatActivity {
 
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,5 +41,6 @@ public class FoodListings extends AppCompatActivity {
         // Applying font 2
         txtGhost2.setTypeface(tf2);
     }
+
 
 }
