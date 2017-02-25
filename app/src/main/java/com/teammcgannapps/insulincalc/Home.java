@@ -1,5 +1,6 @@
 package com.teammcgannapps.insulincalc;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -25,6 +26,11 @@ public class Home extends AppCompatActivity {
 
         // Applying font
         txtGhost.setTypeface(tf);
+    }
+    public void startFood(View view)
+    {
+        Intent intent = new Intent(this, FoodListings.class);
+        startActivity(intent);
     }
 
 
