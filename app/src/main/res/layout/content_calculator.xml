@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title_activity_calculator"
-        android:textSize="50dp"
+        android:textSize="56dp"
         android:typeface="monospace"
         android:gravity="center"
         android:textColor="#ffffff"

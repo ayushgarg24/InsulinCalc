@@ -31,13 +31,17 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="30">
+        android:layout_weight="30"
+        android:background="#5fbf8f"
+        android:layout_margin="8dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="poop\npoo\npo\np\npo\npoo\n\poop\npoo\npo\np"
-            android:textSize="30dp"/>
+            android:text="poop\npoo\npo\np\npo\npoo\n\poop\npoo\npo\np\np\np\np\np\np"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:typeface="monospace" />
 
     </ScrollView>
 
@@ -46,6 +50,7 @@
         android:layout_height="wrap_content"
         android:text="@string/add_food"
         android:textSize="30dp"
-        android:layout_weight="1"/>
+        android:layout_weight="0"
+        android:layout_margin="2dp"/>
 
 </LinearLayout>

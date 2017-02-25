@@ -10,5 +10,12 @@
     <string name="title_activity_settings">Settings</string>
     <string name="title_activity_food_listings">Food Listings</string>
     <string name="add_food">Add A Food</string>
+    <string name="settings1">Carbohydrate to insulin ratio:</string>
+    <string name="settings2">g carb/unit insulin</string>
+    <string name="settings3">Correction:</string>
+    <string name="settings4">mM/L per unit</string>
+    <string name="settings5">over </string>
+    <string name="settings6">mM/L</string>
+    <string name="confirmSettings">Confirm Settings</string>
 
 </resources>
