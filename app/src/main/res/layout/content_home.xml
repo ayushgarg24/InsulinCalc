@@ -51,7 +51,7 @@
         android:layout_marginBottom="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="18dp"
-        android:id="@+id/food_listings"/>
+        android:onClick="startFood"/>
 
     <Button
         android:layout_width="match_parent"
