@@ -6,5 +6,6 @@
     <string name="button1">Calculator</string>
     <string name="button2">Food Listings</string>
     <string name="button3">Settings</string>
+    <string name="title_activity_food_listings">FoodListings</string>
 
 </resources>
