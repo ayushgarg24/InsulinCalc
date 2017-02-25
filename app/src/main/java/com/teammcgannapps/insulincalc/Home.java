@@ -15,10 +15,10 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         // Font path
-        String fontPath = "fonts/Face Your Fears.ttf";
+        String fontPath = "fonts/junegull.ttf";
 
         // text view label
-        TextView txtGhost = (TextView) findViewById(R.id.ghost);
+        TextView txtGhost = (TextView) findViewById(R.id.title);
 
         // Loading Font Face
         Typeface tf = Typeface.createFromAsset(getAssets(), fontPath);

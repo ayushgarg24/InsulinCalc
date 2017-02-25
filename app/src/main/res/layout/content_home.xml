@@ -14,31 +14,23 @@
     android:background="#339966">
 
     <TextView
-        android:layout_width="340dp"
-        android:layout_height="208dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
         android:text="@string/title"
-        android:textSize="42dp"
+        android:textSize="90dp"
         android:typeface="monospace"
         android:gravity="center"
         android:textColor="#ffffff"
         android:paddingTop="48dp"
         android:paddingBottom="48dp"/>
 
-    <TextView
-        android:id="@+id/ghost"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:textSize="70dip"
-        android:gravity="center"
-        android:textColor="#ef0000"
-        android:layout_marginTop="50dip"
-        android:text="ghost" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/button1"
-        android:textSize="32dp"
+        android:textSize="26dp"
         android:background="@drawable/mybutton"
         android:layout_weight="10"
         android:gravity="center"
@@ -51,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/button2"
-        android:textSize="32dp"
+        android:textSize="26dp"
         android:background="@drawable/mybutton"
         android:layout_weight="10"
         android:gravity="center"
@@ -64,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/button3"
-        android:textSize="32dp"
+        android:textSize="26dp"
         android:background="@drawable/mybutton"
         android:layout_weight="10"
         android:gravity="center"
