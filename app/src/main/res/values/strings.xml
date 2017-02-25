@@ -7,5 +7,7 @@
     <string name="button2">Food Listings</string>
     <string name="button3">Settings</string>
     <string name="title_activity_food_listings">FoodListings</string>
+    <string name="title_activity_calculator">Calculator</string>
+    <string name="title_activity_settings">Settings</string>
 
 </resources>

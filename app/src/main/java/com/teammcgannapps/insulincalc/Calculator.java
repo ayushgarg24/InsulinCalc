@@ -9,12 +9,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
-public class FoodListings extends AppCompatActivity {
+public class Calculator extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food_listings);
+        setContentView(R.layout.activity_calculator);
         // Font path
         String fontPath = "fonts/junegull.ttf";
 

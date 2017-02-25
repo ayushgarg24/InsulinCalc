@@ -32,6 +32,16 @@ public class Home extends AppCompatActivity {
         Intent intent = new Intent(this, FoodListings.class);
         startActivity(intent);
     }
+    public void startCalc(View view)
+    {
+        Intent intent = new Intent (this, Calculator.class);
+        startActivity(intent);
+    }
+    public void startSettings(View view)
+    {
+        Intent intent = new Intent (this, Settings.class);
+        startActivity(intent);
+    }
 
 
 }
