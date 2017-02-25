@@ -22,7 +22,6 @@
         <activity
             android:name=".FoodListings"
             android:label="@string/title_activity_food_listings"
-<<<<<<< HEAD
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Calculator"
@@ -31,11 +30,8 @@
         <activity
             android:name=".Settings"
             android:label="@string/title_activity_settings"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-=======
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"/>
->>>>>>> origin/master
     </application>
 
 </manifest>

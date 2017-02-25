@@ -15,17 +15,6 @@ public class FoodListings extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_listings);
-        // Font path
-        String fontPath = "fonts/junegull.ttf";
-
-        // text view label
-        TextView txtGhost = (TextView) findViewById(R.id.title);
-
-        // Loading Font Face
-        Typeface tf = Typeface.createFromAsset(getAssets(), fontPath);
-
-        // Applying font
-        txtGhost.setTypeface(tf);
 
         // Font path
         String fontPath = "fonts/junegull.ttf";
