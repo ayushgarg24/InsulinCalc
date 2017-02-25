@@ -26,6 +26,19 @@ public class Settings extends AppCompatActivity {
 
         // Applying font
         txtGhost.setTypeface(tf);
+        //------------------------------------------------------------------------------------------
+
+        // Font path 2
+        String fontPath2 = "fonts/schoolbully.ttf";
+
+        // text view label 2
+        TextView txtGhost2 = (TextView) findViewById(R.id.allSettings);
+
+        // Loading Font Face 2
+        Typeface tf2 = Typeface.createFromAsset(getAssets(), fontPath2);
+
+        // Applying font 2
+        txtGhost2.setTypeface(tf2);
 
     }
 
