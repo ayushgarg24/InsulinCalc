@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class FoodListings extends AppCompatActivity {
 
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +40,16 @@ public class FoodListings extends AppCompatActivity {
 
         // Applying font 2
         txtGhost2.setTypeface(tf2);
-    }
 
+        String foodList = "";
+
+        for (int i = 0; i < Home.foods.length - 1; i++) {
+            foodList = foodList + Home.foods[i] + "\n";
+        }
+        foodList = foodList.substring(0, foodList.length() - 2);
+
+        TextView t = (TextView) findViewById(R.id.foods);
+        t.setText(foodList);
+    }
 
 }

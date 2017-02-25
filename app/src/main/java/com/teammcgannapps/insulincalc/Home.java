@@ -15,9 +15,6 @@ import java.util.Arrays;
 
 public class Home extends AppCompatActivity {
 
-    protected SharedPreferences.Editor editor;
-    protected SharedPreferences pref;
-
     protected String[] saveFoods = {
             "Milk: 12g/cup",
             "Yogurt: 3.6g/100g",
@@ -38,7 +35,7 @@ public class Home extends AppCompatActivity {
             "Soda: 21g/cup",
             "Cookies: 58g/100g"};
 
-    protected String[] foods;
+    protected static String[] foods;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,14 +53,10 @@ public class Home extends AppCompatActivity {
         // Applying font
         txtGhost.setTypeface(tf);
 
-        pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
-
-        editor = pref.edit();
-
-        foods = loadArray("food");
+        foods = loadArray("food", getApplicationContext());
 
         if (foods.length == 0) {
-            saveArray(saveFoods, "food");
+            saveArray(saveFoods, "food", getApplicationContext());
             foods = saveFoods;
         }
 
@@ -71,6 +64,7 @@ public class Home extends AppCompatActivity {
     public void startFood(View view)
     {
         Intent intent = new Intent(this, FoodListings.class);
+        foods = loadArray("food", getApplicationContext());
         startActivity(intent);
     }
     public void startCalc(View view)
@@ -84,7 +78,9 @@ public class Home extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public boolean saveArray(String[] array, String arrayName) {
+    public boolean saveArray(String[] array, String arrayName, Context context) {
+        SharedPreferences pref = context.getSharedPreferences("myPrefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
         editor.putInt(arrayName + "_size", array.length);
         Arrays.sort(array);
         for (int i=0; i<array.length;i++) {
@@ -93,7 +89,8 @@ public class Home extends AppCompatActivity {
         return editor.commit();
     }
 
-    public String[] loadArray(String arrayName) {
+    public String[] loadArray(String arrayName, Context context) {
+        SharedPreferences pref = context.getSharedPreferences("myPrefs",MODE_PRIVATE);
         int size = pref.getInt(arrayName + "_size", 0);
         String array[] = new String[size];
         for (int i = 0; i < size; i++) {
