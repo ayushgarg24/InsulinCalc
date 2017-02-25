@@ -19,12 +19,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title_activity_food_listings"
-        android:textSize="50dp"
+        android:textSize="56dp"
         android:typeface="monospace"
         android:gravity="center"
         android:textColor="#ffffff"
         android:paddingTop="48dp"
         android:paddingBottom="48dp"
+<<<<<<< HEAD
         android:id="@+id/title" />
+=======
+        android:id="@+id/food_title"
+        android:layout_weight="1"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="30">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="poop\npoo\npo\np\npo\npoo\n\poop\npoo\npo\np"
+            android:textSize="30dp"/>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_food"
+        android:textSize="30dp"
+        android:layout_weight="1"/>
+
+>>>>>>> origin/master
 
 </LinearLayout>

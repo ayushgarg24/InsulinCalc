@@ -27,6 +27,17 @@ public class FoodListings extends AppCompatActivity {
         // Applying font
         txtGhost.setTypeface(tf);
 
+        // Font path
+        String fontPath = "fonts/junegull.ttf";
+
+        // text view label
+        TextView txtGhost = (TextView) findViewById(R.id.food_title);
+
+        // Loading Font Face
+        Typeface tf = Typeface.createFromAsset(getAssets(), fontPath);
+
+        // Applying font
+        txtGhost.setTypeface(tf);
     }
 
 }
