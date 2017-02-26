@@ -26,7 +26,8 @@ public class Calculator extends AppCompatActivity {
 
         // Applying font
         txtGhost.setTypeface(tf);
-
+        TextView txtGhost2 = (TextView) findViewById(R.id.calculate);
+        txtGhost2.setTypeface(tf);
     }
 
 }

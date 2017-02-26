@@ -31,6 +31,8 @@
         android:layout_height="wrap_content"
         android:text="Calculate Dosage"
         android:gravity="center"
+        android:textSize="30dp"
+        android:id="@+id/calculate"
         android:onClick="startResult"
         android:background="@drawable/mybutton3"/>
 
