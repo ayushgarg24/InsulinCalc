@@ -17,5 +17,6 @@
     <string name="settings5">over </string>
     <string name="settings6">mM/L</string>
     <string name="confirmSettings">Confirm Settings</string>
+    <string name="title_activity_result">Result</string>
 
 </resources>

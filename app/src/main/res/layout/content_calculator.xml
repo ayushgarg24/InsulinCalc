@@ -26,5 +26,12 @@
         android:paddingTop="48dp"
         android:paddingBottom="48dp"
         android:id="@+id/title" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Dosage"
+        android:gravity="center"
+        android:onClick="startResult"
+        android:background="@drawable/mybutton3"/>
 
 </LinearLayout>
