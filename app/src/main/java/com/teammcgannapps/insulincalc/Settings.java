@@ -29,7 +29,7 @@ public class Settings extends AppCompatActivity {
         //------------------------------------------------------------------------------------------
 
         // Font path 2
-        String fontPath2 = "fonts/schoolbully.ttf";
+        String fontPath2 = "fonts/libel-suit-rg.ttf";
 
         // text view label 2
         TextView txtGhost2 = (TextView) findViewById(R.id.allSettings);
@@ -39,6 +39,32 @@ public class Settings extends AppCompatActivity {
 
         // Applying font 2
         txtGhost2.setTypeface(tf2);
+        //------------------------------------------------------------------------------------------
+        TextView txtGhost3 = (TextView) findViewById(R.id.carbs);
+
+
+        txtGhost3.setTypeface(tf2);
+        //------------------------------------------------------------------------------------------
+        TextView txtGhost4 = (TextView) findViewById(R.id.mLPer);
+
+
+        txtGhost4.setTypeface(tf2);
+        //------------------------------------------------------------------------------------------
+        TextView txtGhost5 = (TextView) findViewById(R.id.correction);
+
+
+        txtGhost5.setTypeface(tf2);
+        //------------------------------------------------------------------------------------------
+        TextView txtGhost6 = (TextView) findViewById(R.id.unit);
+
+
+        txtGhost6.setTypeface(tf2);
+        //------------------------------------------------------------------------------------------
+        TextView txtGhost7 = (TextView) findViewById(R.id.over);
+
+
+        txtGhost7.setTypeface(tf2);
+
 
     }
 

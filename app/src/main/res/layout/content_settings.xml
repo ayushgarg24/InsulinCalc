@@ -58,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="31dp"
-            android:id="@id/allSettings"
+            android:id="@+id/carbs"
             android:text="@string/settings2"
             android:textColor="#000000"
             />
@@ -71,7 +71,7 @@
         android:text="@string/settings3"
         android:textSize="39dp"
         android:textColor="#000000"
-        android:id="@id/allSettings"
+        android:id="@+id/correction"
         android:layout_weight="1" />
 
     <LinearLayout
@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:textSize="31dp"
             android:text="@string/settings4"
-            android:id="@id/allSettings"
+            android:id="@+id/mLPer"
             android:textColor="#000000"/>
 
     </LinearLayout>
@@ -111,7 +111,7 @@
             android:layout_height="wrap_content"
             android:textSize="31dp"
             android:text="@string/settings5"
-            android:id="@id/allSettings"
+            android:id="@+id/over"
             android:textColor="#000000"/>
 
         <EditText
@@ -130,7 +130,7 @@
             android:layout_height="wrap_content"
             android:textSize="31dp"
             android:text="@string/settings6"
-            android:id="@id/allSettings"
+            android:id="@+id/unit"
             android:textColor="#000000"/>
 
     </LinearLayout>
