@@ -1,6 +1,7 @@
 package com.teammcgannapps.insulincalc;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -73,6 +74,9 @@ public class Calculator extends AppCompatActivity {
         Spinner dropdown5 = (Spinner)findViewById(R.id.spinner5);
         EditText e5 = (EditText)findViewById(R.id.value5);
 
+        EditText cbs = (EditText)findViewById(R.id.currentBloodSugar);
+        EditText ma = (EditText)findViewById(R.id.manualAddition);
+
         final float[] dropdowns = new float[5];
         int[] values = new int[5];
 
@@ -89,9 +93,21 @@ public class Calculator extends AppCompatActivity {
         dropdowns[4] = Float.parseFloat(dropdown5.getSelectedItem().toString().split("g/")[0].split(": ")[1]);
 
 
-        double dosage = 0;
+        double carbs = 0;
         for (int i = 0; i < 5; i++) {
-            dosage += dropdowns[i] * values[i] / 100;
+            carbs += dropdowns[i] * values[i] / 100;
+        }
+        carbs += Integer.parseInt(ma.getText().toString());
+
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("myPrefs",MODE_PRIVATE);
+        int size = pref.getInt("userSettings" + "_size", 0);
+        String array[] = new String[size];
+        for (int i = 0; i < size; i++) {
+            array[i] = pref.getString("userSettings" + "_" + i, null);
+        }
+        double dosage = carbs/Integer.parseInt(array[0]);
+        if (Integer.parseInt(cbs.getText().toString()) > Integer.parseInt(array[2])) {
+            dosage += (Integer.parseInt(cbs.getText().toString()) - Integer.parseInt(array[2])) / Integer.parseInt(array[1]);
         }
 
         Intent intent = new Intent (this, Result.class);
