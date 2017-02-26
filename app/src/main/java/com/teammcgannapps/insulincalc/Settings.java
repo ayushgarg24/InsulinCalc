@@ -15,6 +15,8 @@ import android.widget.Toast;
 
 import java.util.Arrays;
 
+import static com.teammcgannapps.insulincalc.Home.userSettings;
+
 public class Settings extends AppCompatActivity {
 
     @Override
@@ -70,6 +72,13 @@ public class Settings extends AppCompatActivity {
 
 
         txtGhost7.setTypeface(tf2);
+
+        EditText e1 = (EditText)findViewById(R.id.editText1);
+        EditText e2 = (EditText)findViewById(R.id.editText2);
+        EditText e3 = (EditText)findViewById(R.id.editText3);
+        e1.setText(userSettings[0]);
+        e2.setText(userSettings[1]);
+        e3.setText(userSettings[2]);
 
 
     }

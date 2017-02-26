@@ -9,13 +9,14 @@ import android.view.View;
 import android.app.Activity;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.Arrays;
 
 public class Home extends AppCompatActivity {
 
-    protected String[] saveFoods = {
+    protected final String[] saveFoods = {
             "Milk: 12g/cup",
             "Yogurt: 3.6g/100g",
             "Ice Cream: 24g/100g",
@@ -37,6 +38,10 @@ public class Home extends AppCompatActivity {
 
     protected static String[] foods;
 
+    protected final String[] defaultUserSettings = {"10","50","100"};
+
+    public static String[] userSettings;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,12 +57,19 @@ public class Home extends AppCompatActivity {
 
         // Applying font
         txtGhost.setTypeface(tf);
-
+        //load list of foods
         foods = loadArray("food", getApplicationContext());
-
+        //if nothing has been saved yet, load the default list
         if (foods.length == 0) {
             saveArray(saveFoods, "food", getApplicationContext());
             foods = saveFoods;
+        }
+        //load user settings
+        userSettings = loadArray("userSettings",getApplicationContext());
+        //if nothing has been saved yet, load default settings
+        if (userSettings.length == 0){
+            saveArray(defaultUserSettings, "userSettings", getApplicationContext());
+            userSettings = defaultUserSettings;
         }
 
     }
@@ -70,11 +82,14 @@ public class Home extends AppCompatActivity {
     public void startCalc(View view)
     {
         Intent intent = new Intent (this, Calculator.class);
+        foods = loadArray("food", getApplicationContext());
+        userSettings = loadArray("userSettings", getApplicationContext());
         startActivity(intent);
     }
     public void startSettings(View view)
     {
         Intent intent = new Intent (this, Settings.class);
+        userSettings = loadArray("userSettings", getApplicationContext());
         startActivity(intent);
     }
 
