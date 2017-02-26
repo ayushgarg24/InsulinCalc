@@ -17,7 +17,6 @@ import java.util.Arrays;
 public class Home extends AppCompatActivity {
 
     protected final String[] saveFoods = {
-            "Milk: 12g/cup",
             "Yogurt: 3.6g/100g",
             "Ice Cream: 24g/100g",
             "Apple: 14g/100g",
@@ -33,7 +32,6 @@ public class Home extends AppCompatActivity {
             "Lentils: 20g/100g",
             "Potato: 17g/100g",
             "Corn: 74g/100g",
-            "Soda: 21g/cup",
             "Cookies: 58g/100g"};
 
     protected static String[] foods;

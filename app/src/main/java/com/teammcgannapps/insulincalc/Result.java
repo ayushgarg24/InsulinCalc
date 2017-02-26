@@ -7,6 +7,10 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
+
+import static android.R.id.message;
+
 
 public class Result extends AppCompatActivity {
 
@@ -15,11 +19,9 @@ public class Result extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-    }
-    public void startResult(View view)
-    {
-        Intent intent = new Intent (this, Result.class);
-        startActivity(intent);
+        TextView tv = (TextView)findViewById(R.id.display);
+
+        tv.setText("You need to take " + "5" + " units of insulin.");
     }
 
 }
