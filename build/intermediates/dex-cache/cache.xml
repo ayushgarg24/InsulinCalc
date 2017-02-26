@@ -39,15 +39,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.1_83d88bd15270983c04892d4f997bbab604f00826\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -63,15 +54,6 @@
         revision="24.0.1"
         sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
         <dex dex="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_d9782843653316264447671bc969cac02d15e933\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\charl\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
-        <dex dex="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.1_c2fe1fd4c57a5311557dd8d9e79ad1d980a44689\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -93,29 +75,11 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.1_bbdf57b83e194cc3febb05edde203c355eb2b44c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_dd4bdb737b62f371829435c36f8bb36dceb659f3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="02425166db1f0aaf4576ef7ffe9f7ac45296c36f">
+        sha1="11e852490943d1688af91c13328ca44b43d9ade5">
         <dex dex="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_bf6fa562621b816e1356b870ce20d060a379e51b\classes.dex" />
     </item>
     <item
@@ -133,8 +97,44 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="5e33968b7b6e5622c68a47e6b762ebb629f0a8e0">
+        sha1="9d4ce534240195d193121aa783cc4efd1c24f332">
         <dex dex="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_802bef38308c93d4e379b292a91ae696c56bc8a3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.1_83d88bd15270983c04892d4f997bbab604f00826\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\charl\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.1_c2fe1fd4c57a5311557dd8d9e79ad1d980a44689\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.1_bbdf57b83e194cc3febb05edde203c355eb2b44c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\Users\charl\Desktop\AndroidApps\InsulinCalc\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_dd4bdb737b62f371829435c36f8bb36dceb659f3\classes.dex" />
     </item>
 
 </items>

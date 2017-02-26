@@ -46,7 +46,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
                 android:layout_weight="5"
-                android:background="#ffffff"
+                android:inputType="number"
+                android:gravity="center"
+                android:background="@drawable/mybutton2"
                 android:text="0"
                 android:id="@+id/value1"/>
 
@@ -80,7 +82,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
                 android:layout_weight="5"
-                android:background="#ffffff"
+                android:inputType="number"
+                android:gravity="center"
+                android:background="@drawable/mybutton2"
                 android:text="0"
                 android:id="@+id/value2"/>
 
@@ -114,7 +118,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
                 android:layout_weight="5"
-                android:background="#ffffff"
+                android:inputType="number"
+                android:gravity="center"
+                android:background="@drawable/mybutton2"
                 android:text="0"
                 android:id="@+id/value3"/>
 
@@ -148,8 +154,10 @@
             android:layout_width="match_parent"
             android:layout_height="32dp"
             android:layout_weight="5"
-            android:background="#ffffff"
             android:text="0"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="@drawable/mybutton2"
             android:id="@+id/value4"/>
 
         <TextView
@@ -182,7 +190,9 @@
             android:layout_width="match_parent"
             android:layout_height="32dp"
             android:layout_weight="5"
-            android:background="#ffffff"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="@drawable/mybutton2"
             android:text="0"
             android:id="@+id/value5"/>
 
@@ -208,12 +218,14 @@
             android:layout_height="wrap_content"
             android:text="Manual Addition: "
             android:textColor="#000000"
-            android:textSize="24dp"/>
+            android:textSize="20dp"/>
 
         <EditText
             android:layout_width="50dp"
             android:layout_height="30dp"
-            android:background="#ffffff"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="@drawable/mybutton2"
             android:text="0"
             android:id="@+id/manualAddition"/>
 
@@ -236,14 +248,23 @@
             android:layout_height="wrap_content"
             android:text="Current Blood Sugar: "
             android:textColor="#000000"
-            android:textSize="24dp"/>
+            android:textSize="20dp"/>
 
         <EditText
             android:layout_width="50dp"
             android:layout_height="30dp"
-            android:background="#ffffff"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="@drawable/mybutton2"
             android:text="100"
             android:id="@+id/currentBloodSugar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mM/L"
+            android:textColor="#000000"
+            android:textSize="18dp"/>
 
     </LinearLayout>
 

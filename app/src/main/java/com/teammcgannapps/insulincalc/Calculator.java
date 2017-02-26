@@ -22,7 +22,7 @@ import static com.teammcgannapps.insulincalc.Home.foods;
 public class Calculator extends AppCompatActivity {
 
     protected LinearLayout layout;
-    protected String message;
+    public final static String EXTRA_MESSAGE = "com.teammcgannapps.insulincalc.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +73,7 @@ public class Calculator extends AppCompatActivity {
         Spinner dropdown5 = (Spinner)findViewById(R.id.spinner5);
         EditText e5 = (EditText)findViewById(R.id.value5);
 
-        final int[] dropdowns = new int[5];
+        final float[] dropdowns = new float[5];
         int[] values = new int[5];
 
         values[0] = Integer.parseInt(e1.getText().toString());
@@ -82,56 +82,22 @@ public class Calculator extends AppCompatActivity {
         values[3] = Integer.parseInt(e4.getText().toString());
         values[4] = Integer.parseInt(e5.getText().toString());
 
-        dropdown1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                dropdowns[0] = Integer.parseInt((parent.getSelectedItem().toString()).split("g/")[0].split(": ")[1]);
-            }
-            public void onNothingSelected(AdapterView<?> parent) {
+        dropdowns[0] = Float.parseFloat(dropdown1.getSelectedItem().toString().split("g/")[0].split(": ")[1]);
+        dropdowns[1] = Float.parseFloat(dropdown2.getSelectedItem().toString().split("g/")[0].split(": ")[1]);
+        dropdowns[2] = Float.parseFloat(dropdown3.getSelectedItem().toString().split("g/")[0].split(": ")[1]);
+        dropdowns[3] = Float.parseFloat(dropdown4.getSelectedItem().toString().split("g/")[0].split(": ")[1]);
+        dropdowns[4] = Float.parseFloat(dropdown5.getSelectedItem().toString().split("g/")[0].split(": ")[1]);
 
-            }
-        });
-        dropdown2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                dropdowns[1] = Integer.parseInt((parent.getSelectedItem().toString()).split("g/")[0].split(": ")[1]);
-            }
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-        dropdown3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                dropdowns[2] = Integer.parseInt((parent.getSelectedItem().toString()).split("g/")[0].split(": ")[1]);
-            }
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-        dropdown4.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                dropdowns[3] = Integer.parseInt((parent.getSelectedItem().toString()).split("g/")[0].split(": ")[1]);
-            }
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-        dropdown5.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                dropdowns[4] = Integer.parseInt((parent.getSelectedItem().toString()).split("g/")[0].split(": ")[1]);
-            }
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
 
         double dosage = 0;
         for (int i = 0; i < 5; i++) {
-            dosage += dropdowns[i] * values[i] / 10000;
+            dosage += dropdowns[i] * values[i] / 100;
         }
 
-        message = Integer.toString((int)dosage);
         Intent intent = new Intent (this, Result.class);
+        String message = Integer.toString((int)dosage);
+        intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
-
 
 }
